@@ -12,6 +12,7 @@ DIS_MSG = "|STOP|"
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect(ADDRESS)
 
+# Sends message to server and prints out acknowledgement
 def send_message(message):
     msg = message.encode(MSG_FMT)
     msg_length = len(msg)
@@ -19,10 +20,26 @@ def send_message(message):
     msg_length = msg_length + b' ' * (LENGTH - len(msg_length))
     client.send(msg_length)
     client.send(msg)
-    
-send_message("Hi server, my name is ben.")
-msg = input(">>> ")
-send_message(msg)
-msg = input(">>> ")
-send_message(msg)
-send_message(DIS_MSG)
+    print(client.recv(2048).decode(MSG_FMT))
+
+
+message = ""
+print("Type \"|STOP|\" to close connection.")
+while (message != DIS_MSG):
+    message = input(">>> ")
+    msg_chunks = message.split(' ')
+    if (msg_chunks[0] == "echo"):
+        message = message[len("echo") + 1:len(message)]
+        send_message(message)
+    if (msg_chunks[0] == "today"):
+        message = message[len("today") + 1:len(message)]
+        send_message(message)
+    if (msg_chunks[0] == "tomorrow"):
+        message = message[len("tomorrow") + 1:len(message)]
+        send_message(message)
+    if (msg_chunks[0] == "rain"):
+        message = message[len("rain") + 1:len(message)]
+        send_message(message)
+    if (message == DIS_MSG):
+        send_message(DIS_MSG)
+        
