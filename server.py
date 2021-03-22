@@ -22,8 +22,11 @@ def client_handler(connection, address):
         message = connection.recv(length).decode(MSG_FMT)
         if (DIS_MSG == message):
             client_alive = False
+            connection.send("Connection Terminated.".encode(MSG_FMT))
         else:
             print(f"|CLIENT {address}| echoed \"{message}\"")
+            connection.send("Messaged received.".encode(MSG_FMT))
+
     print(f"|CLIENT {address}| connection terminated.")
     connection.close()
 
