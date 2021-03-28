@@ -13,7 +13,7 @@ client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # read in server, port, and valid commands from config file
 parser = configparser.ConfigParser()
 parser.read('sys_defaults.ini')
-list_of_cmds = parser.get('commands', 'list')
+list_of_cmds = parser.get('commands', 'cmd')
 COMMANDS = list_of_cmds.split(' ')
 SERVER = parser.get('server_info', 'address') # Should be loop back address
 PORT = int(parser.get('server_info', 'port'))
@@ -27,13 +27,23 @@ def send_message(message):
     msg_length = msg_length + b' ' * (LENGTH - len(msg_length))
     client.send(msg_length)
     client.send(msg)
-    print(client.recv(2048).decode(MSG_FMT))
+
+# prints commands with hints to the console
+def print_commands_hints():
+    print("Command definitions:")
+    for ind in range(len(COMMANDS)):
+        cmd = COMMANDS[ind]
+        if (cmd == "|STOP|"):
+            cmd = 'stop'
+        cmd_def = parser.get('commands', cmd)
+        print("   " + cmd_def)
+    print("   \"help\" - Lists definitions of other available commands")
 
 # prints to console all of the acceptable commands
 def print_commands():
     print("Commands:")
     for cmd in COMMANDS:
-        print("    " + cmd)
+        print("   " + cmd)
 
 # determines if the command is valid. returns true if valid, returns false if not valid
 def check_command(command):
@@ -47,8 +57,11 @@ def obtain_command():
     command = input("$$ ")
     arguments = command.split(' ')
     while (not check_command(arguments[0])):
-        print("Invalid command: {command}")
-        print_commands()
+        if (arguments[0].lower() == 'help'):
+            print_commands_hints()
+        else:
+            print(f"Invalid command: {command}")
+            print_commands()
         command = input("$$ ")
         arguments = command.split(' ')
     return command
@@ -60,6 +73,7 @@ def start_client():
     while (command != DIS_MSG):
         command = obtain_command()
         send_message(command)
+        print(client.recv(2048).decode(MSG_FMT))
 
 # create TCP/IP socket and stablish connection to server
 validConnection = True
@@ -71,6 +85,6 @@ except:
 
 # start client process
 if (validConnection):
-    # prints my laptop ip address to show two IP addresses are being used (my laptop and the loopback address)
-    print("Laptop IP Address: " + str(socket.gethostbyname(socket.gethostname())))
+    # prints my laptop ip address to show two IP addresses are being used (my laptop (192.168.56.1) and the loopback address (127.0.0.1))
+    #print("Device IP Address: " + str(socket.gethostbyname(socket.gethostname()))) 
     start_client()
