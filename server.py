@@ -117,7 +117,7 @@ def sevenDayWeather(conn, addr, data, loc):
 
     conn.send(msg_response.encode(MSG_FMT))
     print(f"{time.ctime(time.time())} {addr} requested seven day forecast for \"{loc}\".")
-{time.ctime(time.time())}
+
 # Gathers weather alert(s) information
 def alertsWeather(conn, addr, data, loc):
     msg_response = ""
