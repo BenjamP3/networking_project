@@ -1,0 +1,146 @@
+----------------------------------
+Sun Mar 28 16:17:12 2021 [SERVER - 127.0.0.1] STARTING UP ON PORT 1010
+Sun Mar 28 16:17:17 2021 [CLIENT - ('127.0.0.1', 51857)] connection started.
+Sun Mar 28 16:17:29 2021 [CLIENT - ('127.0.0.1', 51857)] command: tomorrow columbus
+Sun Mar 28 16:17:50 2021 [CLIENT - ('127.0.0.1', 51857)] command: outlook columbus
+Sun Mar 28 16:17:58 2021 [CLIENT - ('127.0.0.1', 51857)] command: alerts columbus
+Sun Mar 28 16:18:04 2021 [CLIENT - ('127.0.0.1', 51857)] command: alerts topeka kansas
+Sun Mar 28 16:18:13 2021 [CLIENT - ('127.0.0.1', 51857)] command: outlook denver co
+Sun Mar 28 16:18:49 2021 [CLIENT - ('127.0.0.1', 51857)] connection terminated.
+Sun Mar 28 16:19:17 2021 [CLIENT - ('127.0.0.1', 52064)] connection started.
+Sun Mar 28 16:19:32 2021 [CLIENT - ('127.0.0.1', 52064)] connection terminated.
+Sun Mar 28 16:21:33 2021 [CLIENT - ('127.0.0.1', 52126)] connection started.
+Sun Mar 28 16:22:03 2021 [CLIENT - ('127.0.0.1', 52126)] connection terminated.
+----------------------------------
+Sun Mar 28 17:03:15 2021 [SERVER - 127.0.0.1] STARTING UP ON PORT 1010
+Sun Mar 28 17:03:22 2021 [CLIENT - ('127.0.0.1', 53419)] connection started.
+Sun Mar 28 17:03:42 2021 [CLIENT - ('127.0.0.1', 53434)] connection started.
+Sun Mar 28 17:03:51 2021 [CLIENT - ('127.0.0.1', 53434)] command: current columbus
+Sun Mar 28 17:03:57 2021 [CLIENT - ('127.0.0.1', 53419)] connection terminated.
+Sun Mar 28 17:04:11 2021 [CLIENT - ('127.0.0.1', 53434)] command: outlook columbus
+Sun Mar 28 17:04:43 2021 [CLIENT - ('127.0.0.1', 53434)] command: current las angeles
+Sun Mar 28 17:04:59 2021 [CLIENT - ('127.0.0.1', 53434)] command: today Los Angelos
+Sun Mar 28 17:05:06 2021 [CLIENT - ('127.0.0.1', 53434)] connection terminated.
+----------------------------------
+Mon Mar 29 17:10:50 2021 [SERVER - 127.0.0.1] STARTING UP ON PORT 1010
+Mon Mar 29 17:11:03 2021 [CLIENT - ('127.0.0.1', 51118)] connection started.
+Mon Mar 29 17:11:48 2021 [CLIENT - ('127.0.0.1', 51118)] connection terminated.
+Mon Mar 29 17:12:55 2021 [CLIENT - ('127.0.0.1', 51165)] connection started.
+Mon Mar 29 17:13:27 2021 [CLIENT - ('127.0.0.1', 51165)] command: outlook columbus ohio
+Mon Mar 29 17:14:00 2021 [CLIENT - ('127.0.0.1', 51165)] connection terminated.
+Mon Mar 29 17:14:05 2021 [CLIENT - ('127.0.0.1', 51192)] connection started.
+Mon Mar 29 17:14:28 2021 [CLIENT - ('127.0.0.1', 51192)] command: current columbus Ohio
+Mon Mar 29 17:15:25 2021 [CLIENT - ('127.0.0.1', 51192)] connection terminated.
+----------------------------------
+Mon Mar 29 17:41:17 2021 [SERVER - 127.0.0.1] STARTING UP ON PORT 1010
+Mon Mar 29 17:41:21 2021 [CLIENT - ('127.0.0.1', 51395)] connection started.
+Mon Mar 29 17:41:29 2021 [CLIENT - ('127.0.0.1', 51395)] command: current columbus ohio
+Mon Mar 29 17:41:57 2021 [CLIENT - ('127.0.0.1', 51395)] command: outlook columbus ohio
+Mon Mar 29 17:42:14 2021 [CLIENT - ('127.0.0.1', 51395)] connection terminated.
+Mon Mar 29 17:42:17 2021 [CLIENT - ('127.0.0.1', 51485)] connection started.
+Mon Mar 29 17:42:27 2021 [CLIENT - ('127.0.0.1', 51485)] connection terminated.
+Mon Mar 29 17:42:31 2021 [CLIENT - ('127.0.0.1', 51498)] connection started.
+Mon Mar 29 17:42:33 2021 [CLIENT - ('127.0.0.1', 51498)] connection terminated.
+Mon Mar 29 17:42:46 2021 [CLIENT - ('127.0.0.1', 51532)] connection started.
+Mon Mar 29 17:42:58 2021 [CLIENT - ('127.0.0.1', 51532)] command: outlook columbus oh
+Mon Mar 29 17:44:56 2021 [CLIENT - ('127.0.0.1', 51532)] connection terminated.
+Mon Mar 29 17:50:07 2021 [CLIENT - ('127.0.0.1', 51793)] connection started.
+Mon Mar 29 17:50:26 2021 [CLIENT - ('127.0.0.1', 51793)] connection terminated.
+Mon Mar 29 17:50:32 2021 [CLIENT - ('127.0.0.1', 51810)] connection started.
+Mon Mar 29 17:51:25 2021 [CLIENT - ('127.0.0.1', 51810)] connection terminated.
+----------------------------------
+Mon Mar 29 17:56:24 2021 [SERVER - 127.0.0.1] STARTING UP ON PORT 1010
+Mon Mar 29 17:56:36 2021 [CLIENT - ('127.0.0.1', 52262)] connection started.
+Mon Mar 29 17:56:43 2021 [CLIENT - ('127.0.0.1', 52262)] connection terminated.
+Mon Mar 29 17:57:55 2021 [CLIENT - ('127.0.0.1', 52297)] connection started.
+Mon Mar 29 17:58:04 2021 [CLIENT - ('127.0.0.1', 52297)] connection terminated.
+Mon Mar 29 17:59:45 2021 [CLIENT - ('127.0.0.1', 52346)] connection started.
+Mon Mar 29 17:59:53 2021 [CLIENT - ('127.0.0.1', 52346)] connection terminated.
+Mon Mar 29 18:01:00 2021 [CLIENT - ('127.0.0.1', 52374)] connection started.
+Mon Mar 29 18:01:10 2021 [CLIENT - ('127.0.0.1', 52374)] connection terminated.
+Mon Mar 29 18:01:26 2021 [CLIENT - ('127.0.0.1', 52389)] connection started.
+Mon Mar 29 18:01:45 2021 [CLIENT - ('127.0.0.1', 52389)] connection terminated.
+Mon Mar 29 18:05:22 2021 [CLIENT - ('127.0.0.1', 52798)] connection started.
+Mon Mar 29 18:05:35 2021 [CLIENT - ('127.0.0.1', 52798)] connection terminated.
+Mon Mar 29 18:05:37 2021 [CLIENT - ('127.0.0.1', 52854)] connection started.
+Mon Mar 29 18:06:06 2021 [CLIENT - ('127.0.0.1', 52854)] command: outlook columbus ohio
+Mon Mar 29 18:06:15 2021 [CLIENT - ('127.0.0.1', 52854)] connection terminated.
+Mon Mar 29 18:06:20 2021 [CLIENT - ('127.0.0.1', 52872)] connection started.
+Mon Mar 29 18:06:32 2021 [CLIENT - ('127.0.0.1', 52872)] command: outlook columbus ohio
+Mon Mar 29 18:13:07 2021 [CLIENT - ('127.0.0.1', 52872)] connection terminated.
+Mon Mar 29 18:13:14 2021 [CLIENT - ('127.0.0.1', 53772)] connection started.
+Mon Mar 29 18:13:22 2021 [CLIENT - ('127.0.0.1', 53772)] command: outlook columbus
+Mon Mar 29 18:13:52 2021 [CLIENT - ('127.0.0.1', 53772)] connection terminated.
+Mon Mar 29 18:13:54 2021 [CLIENT - ('127.0.0.1', 53796)] connection started.
+Mon Mar 29 18:14:05 2021 [CLIENT - ('127.0.0.1', 53796)] command: outlook columbus
+Mon Mar 29 18:14:35 2021 [CLIENT - ('127.0.0.1', 53796)] connection terminated.
+Mon Mar 29 18:14:39 2021 [CLIENT - ('127.0.0.1', 53816)] connection started.
+Mon Mar 29 18:14:47 2021 [CLIENT - ('127.0.0.1', 53816)] command: outlook columbus oh
+Mon Mar 29 18:17:32 2021 [CLIENT - ('127.0.0.1', 53816)] connection terminated.
+Mon Mar 29 18:18:18 2021 [CLIENT - ('127.0.0.1', 54313)] connection started.
+Mon Mar 29 18:19:24 2021 [CLIENT - ('127.0.0.1', 54313)] connection terminated.
+Mon Mar 29 18:19:28 2021 [CLIENT - ('127.0.0.1', 54395)] connection started.
+Mon Mar 29 18:19:53 2021 [CLIENT - ('127.0.0.1', 54395)] connection terminated.
+Mon Mar 29 18:19:55 2021 [CLIENT - ('127.0.0.1', 54453)] connection started.
+Mon Mar 29 18:20:19 2021 [CLIENT - ('127.0.0.1', 54453)] connection terminated.
+Mon Mar 29 18:20:31 2021 [CLIENT - ('127.0.0.1', 54469)] connection started.
+Mon Mar 29 18:20:45 2021 [CLIENT - ('127.0.0.1', 54469)] connection terminated.
+Mon Mar 29 18:20:48 2021 [CLIENT - ('127.0.0.1', 54496)] connection started.
+Mon Mar 29 18:21:32 2021 [CLIENT - ('127.0.0.1', 54496)] connection terminated.
+----------------------------------
+Mon Mar 29 19:28:43 2021 [SERVER - 127.0.0.1] STARTING UP ON PORT 1010
+Mon Mar 29 19:29:12 2021 [CLIENT - ('127.0.0.1', 64072)] connection started.
+Mon Mar 29 19:30:42 2021 [CLIENT - ('127.0.0.1', 64072)] command: current columbus ohio
+Mon Mar 29 19:31:15 2021 [CLIENT - ('127.0.0.1', 64072)] command: outlook columbus ohio
+Mon Mar 29 19:32:29 2021 [CLIENT - ('127.0.0.1', 64072)] command: current brecksville ohio
+Mon Mar 29 19:33:15 2021 [CLIENT - ('127.0.0.1', 64072)] command: current dodge city
+Mon Mar 29 19:33:44 2021 [CLIENT - ('127.0.0.1', 64072)] command: current miami florida
+Mon Mar 29 19:34:33 2021 [CLIENT - ('127.0.0.1', 64072)] command: current 336 honey jane drive
+Mon Mar 29 19:34:55 2021 [CLIENT - ('127.0.0.1', 64072)] connection terminated.
+----------------------------------
+Tue Mar 30 21:29:51 2021 [SERVER - 127.0.0.1] STARTING UP ON PORT 1010
+Tue Mar 30 21:29:58 2021 [CLIENT - ('127.0.0.1', 61828)] connection started.
+Tue Mar 30 21:30:13 2021 [CLIENT - ('127.0.0.1', 61878)] connection started.
+Tue Mar 30 21:30:42 2021 [CLIENT - ('127.0.0.1', 61878)] connection terminated.
+Tue Mar 30 21:31:04 2021 [CLIENT - ('127.0.0.1', 61828)] command: outlook columbus ohio
+Tue Mar 30 21:32:19 2021 [CLIENT - ('127.0.0.1', 61828)] command: current dodge city
+Tue Mar 30 21:32:33 2021 [CLIENT - ('127.0.0.1', 61828)] command: current dodge city kansas
+Tue Mar 30 21:33:28 2021 [CLIENT - ('127.0.0.1', 61828)] command: current denver colorado
+Tue Mar 30 21:33:38 2021 [CLIENT - ('127.0.0.1', 61828)] command: current miami florida
+Tue Mar 30 21:33:48 2021 [CLIENT - ('127.0.0.1', 61828)] connection terminated.
+----------------------------------
+Tue Mar 30 22:01:28 2021 [SERVER - 127.0.0.1] STARTING UP ON PORT 1010
+Tue Mar 30 22:01:35 2021 [CLIENT - ('127.0.0.1', 65225)] connection started.
+Tue Mar 30 22:01:51 2021 [CLIENT - ('127.0.0.1', 65225)] command: current columbus ohio
+Tue Mar 30 22:02:11 2021 [CLIENT - ('127.0.0.1', 65225)] connection terminated.
+Tue Mar 30 22:03:13 2021 [CLIENT - ('127.0.0.1', 65343)] connection started.
+Tue Mar 30 22:03:21 2021 [CLIENT - ('127.0.0.1', 65343)] command: current columbus ohio
+Tue Mar 30 22:03:24 2021 [CLIENT - ('127.0.0.1', 65343)] connection terminated.
+Tue Mar 30 22:08:57 2021 [CLIENT - ('127.0.0.1', 49483)] connection started.
+Tue Mar 30 22:09:02 2021 [CLIENT - ('127.0.0.1', 49483)] connection terminated.
+Tue Mar 30 22:10:45 2021 [CLIENT - ('127.0.0.1', 49628)] connection started.
+Tue Mar 30 22:10:49 2021 [CLIENT - ('127.0.0.1', 49628)] connection terminated.
+Tue Mar 30 22:10:59 2021 [CLIENT - ('127.0.0.1', 49650)] connection started.
+Tue Mar 30 22:11:08 2021 [CLIENT - ('127.0.0.1', 49650)] command: current columbus ohio
+Tue Mar 30 22:11:20 2021 [CLIENT - ('127.0.0.1', 49650)] command: alerts columbus ohio
+Tue Mar 30 22:11:31 2021 [CLIENT - ('127.0.0.1', 49650)] command: outlook columbus ohio
+Tue Mar 30 22:20:19 2021 [CLIENT - ('127.0.0.1', 49650)] connection terminated.
+----------------------------------
+Wed Mar 31 00:23:59 2021 [SERVER - 127.0.0.1] STARTING UP ON PORT 1010
+Wed Mar 31 00:24:02 2021 [CLIENT - ('127.0.0.1', 54616)] connection started.
+Wed Mar 31 00:24:11 2021 [CLIENT - ('127.0.0.1', 54616)] command: hour columbus
+Wed Mar 31 00:25:31 2021 [CLIENT - ('127.0.0.1', 54616)] command: alerts denver colorado
+Wed Mar 31 00:25:40 2021 [CLIENT - ('127.0.0.1', 54616)] command: current dubai
+Wed Mar 31 00:25:54 2021 [CLIENT - ('127.0.0.1', 54616)] command: current shanghai
+Wed Mar 31 00:26:07 2021 [CLIENT - ('127.0.0.1', 54616)] connection terminated.
+Wed Mar 31 00:26:09 2021 [CLIENT - ('127.0.0.1', 54679)] connection started.
+Wed Mar 31 00:26:19 2021 [CLIENT - ('127.0.0.1', 54679)] connection terminated.
+----------------------------------
+Wed Mar 31 08:16:56 2021 [SERVER - 127.0.0.1] STARTING UP ON PORT 1010
+Wed Mar 31 08:17:14 2021 [CLIENT - ('127.0.0.1', 56990)] connection started.
+Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000215EC676430>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)')': /search?q=columbus+ohio&format=json&limit=1
+Wed Mar 31 08:20:35 2021 [CLIENT - ('127.0.0.1', 56990)] command: hour columbus ohio
+Wed Mar 31 08:30:33 2021 [CLIENT - ('127.0.0.1', 56990)] connection terminated.
+Wed Mar 31 08:31:19 2021 [CLIENT - ('127.0.0.1', 57382)] connection started.
+Wed Mar 31 08:31:28 2021 [CLIENT - ('127.0.0.1', 57382)] command: current columbus ohio
+Wed Mar 31 08:31:31 2021 [CLIENT - ('127.0.0.1', 57382)] connection terminated.
