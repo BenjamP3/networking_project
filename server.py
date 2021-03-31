@@ -7,13 +7,14 @@ import configparser
 from geopy.geocoders import Nominatim
 import requests
 import logging
+import datetime as dt
 
 logging.basicConfig(filename="server_logging.log", level=logging.INFO, format="%(message)s")
 geolocator = Nominatim(user_agent="local_server_app")
 LENGTH = 64
 MSG_FMT = "utf-8"
 DIS_MSG = "|STOP|"
-#API_KEY = c6bfff6ac43696f86f3da51a30f393f1
+WEEKDAYS = ("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday")
 
 # create TCP/IP socket
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -51,14 +52,14 @@ def hourWeather(conn, addr, data, loc):
     temp = hourly['temp']
     feels_temp = hourly['feels_like']
     cloud_pct = hourly['clouds']
-    msg_response = msg_response + f"Current:\n---Weather: {conditions}\n---Temperature: {temp}F\n---Feels Like: {feels_temp}F\n---Cloud Cover: {cloud_pct}%\n"
+    msg_response = msg_response + f"{dt.datetime.now().hour}:00: (Currently)\n---Weather: {conditions}\n---Temperature: {temp}F\n---Feels Like: {feels_temp}F\n---Cloud Cover: {cloud_pct}%\n"
     for i in range(12):
         hourly = data['hourly'][i+1]
         conditions = hourly['weather'][0]['description']
         temp = hourly['temp']
         feels_temp = hourly['feels_like']
         cloud_pct = hourly['clouds']
-        msg_response = msg_response + f"Hour {i+1}:\n---Weather: {conditions}\n---Temperature: {temp}F\n---Feels Like: {feels_temp}F\n---Cloud Cover: {cloud_pct}%\n"
+        msg_response = msg_response + f"\n{(dt.datetime.now().hour + i + 1) % 24}:00: (Hour {i+1})\n---Weather: {conditions}\n---Temperature: {temp}F\n---Feels Like: {feels_temp}F\n---Cloud Cover: {cloud_pct}%\n"
 
     conn.send(msg_response.encode(MSG_FMT))
     print(f"{time.ctime(time.time())} {addr} requested 12 hour forecast for \"{loc}\".")
@@ -96,7 +97,7 @@ def sevenDayWeather(conn, addr, data, loc):
     min_temp = daily['temp']['min']
     precip = float(daily['pop']) * 100.0
     cloud_pct = daily['clouds']
-    msg_response = msg_response + f"Today's Forecast:\n---Weather: {conditions}\n---Temperature: High - {max_temp}F, Low - {min_temp}F\n---Cloud Cover: {cloud_pct}%\n---Chance of Precipitation: {precip}%\n"
+    msg_response = msg_response + f"\n{WEEKDAYS[(dt.datetime.now().weekday()) % 7]}'s Forecast: (Today)\n---Weather: {conditions}\n---Temperature: High - {max_temp}F, Low - {min_temp}F\n---Cloud Cover: {cloud_pct}%\n---Chance of Precipitation: {precip}%\n"
     
     tmr = data['daily'][1]
     conditions = tmr['weather'][0]['description']
@@ -104,7 +105,7 @@ def sevenDayWeather(conn, addr, data, loc):
     min_temp = tmr['temp']['min']
     precip = float(tmr['pop']) * 100.0
     cloud_pct = tmr['clouds']
-    msg_response = msg_response + f"Tomorrow's Forecast:\n---Weather: {conditions}\n---Temperature: High - {max_temp}F, Low - {min_temp}F\n---Cloud Cover: {cloud_pct}%\n---Chance of Precipitation: {precip}%\n"
+    msg_response = msg_response + f"\n{WEEKDAYS[(dt.datetime.now().weekday() + 1) % 7]}'s Forecast: (Tomorrow)\n---Weather: {conditions}\n---Temperature: High - {max_temp}F, Low - {min_temp}F\n---Cloud Cover: {cloud_pct}%\n---Chance of Precipitation: {precip}%\n"
     for i in range(5):
         day = data['daily'][i+2]
         conditions = day['weather'][0]['description']
@@ -112,7 +113,7 @@ def sevenDayWeather(conn, addr, data, loc):
         min_temp = day['temp']['min']
         precip = float(day['pop']) * 100.0
         cloud_pct = day['clouds']
-        msg_response = msg_response + f"Day {i+2}'s Forecast:\n---Weather: {conditions}\n---Temperature: High - {max_temp}F, Low - {min_temp}F\n---Cloud Cover: {cloud_pct}%\n---Chance of Precipitation: {precip}%\n"
+        msg_response = msg_response + f"\n{WEEKDAYS[(dt.datetime.now().weekday() + i + 2) % 7]}'s Forecast:\n---Weather: {conditions}\n---Temperature: High - {max_temp}F, Low - {min_temp}F\n---Cloud Cover: {cloud_pct}%\n---Chance of Precipitation: {precip}%\n"
 
 
     conn.send(msg_response.encode(MSG_FMT))
